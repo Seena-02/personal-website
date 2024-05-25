@@ -1,19 +1,25 @@
 import React from "react";
 
-function Nav() {
+interface NavProps {
+  brandName : string,
+  imageSrcPath : string;
+}
+
+
+function Nav({brandName, imageSrcPath} : NavProps) {
   return (
     <h1>
       <nav className="navbar bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <img
-              src=""
+              src={imageSrcPath}
               alt="Logo"
               width="30"
               height="24"
               className="d-inline-block align-text-top"
             />
-            Seena Mohajeran
+            {brandName}
           </a>
         </div>
       </nav>

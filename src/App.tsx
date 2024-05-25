@@ -1,14 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import Nav from "./components/Nav"
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.css'
+import imagePath from './assets/logo.jpg'
 
 function App() {
   return (
     <div>
-      <Nav />
+      <Nav brandName="Seena Mohajeran" imageSrcPath={imagePath}/>
     </div>
   )
 }
