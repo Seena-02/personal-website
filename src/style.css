@@ -447,7 +447,7 @@ p.tech-stack {
   font-size: 0.8rem;
   color: var(--text-secondary);
   font-weight: 500;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 /* ============================================================
