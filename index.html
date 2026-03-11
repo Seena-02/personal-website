@@ -2,12 +2,260 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+
+    <title>Seena Mohajeran</title>
+    <meta name="description" content="Software engineer specializing in machine learning and embedded systems. M.S. student at USC, formerly at Applied Medical." />
+
+    <!-- Open Graph — update the domain once deployed -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Seena Mohajeran" />
+    <meta property="og:description" content="Software engineer specializing in machine learning and embedded systems." />
+    <meta property="og:image" content="https://seenamohajeran.com/images/profile.jpg" />
+    <meta property="og:url" content="https://seenamohajeran.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Navigation -->
+    <header>
+      <nav>
+        <a href="#hero" class="nav-brand">Seena Mohajeran</a>
+        <ul id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">
+            <line x1="3" y1="6" x2="17" y2="6" />
+            <line x1="3" y1="10" x2="17" y2="10" />
+            <line x1="3" y1="14" x2="17" y2="14" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- Hero -->
+      <section id="hero">
+        <div class="hero-inner">
+          <div class="hero-text">
+            <h1>Seena Mohajeran</h1>
+            <p class="title">Software Engineer &mdash; ML &amp; Embedded Systems</p>
+            <p class="tagline">Building intelligent systems at the intersection of machine learning and embedded software.</p>
+            <a href="/resume/seena-mohajeran-resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              Resume
+            </a>
+          </div>
+          <div class="hero-photo">
+            <img
+              src="/images/profile.jpg"
+              alt="Seena Mohajeran"
+              width="200"
+              height="200"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Software engineer with experience in embedded systems R&amp;D and a graduate focus in machine learning and data science.
+          I've worked on regulated medical device software at Applied Medical and am currently pursuing my M.S. at USC.
+        </p>
+        <h3>Education</h3>
+        <ul class="education-list">
+          <li>
+            <strong>M.S. Electrical and Computer Engineering &mdash; Machine Learning and Data Science</strong><br />
+            University of Southern California (USC) &middot; GPA: 3.7 &middot; Aug 2024 &ndash; May 2026
+          </li>
+          <li>
+            <strong>B.S. Computer Engineering &mdash; Minor Computer Science</strong><br />
+            California State University, Fullerton (CSUF) &middot; GPA: 3.51 &middot; Aug 2020 &ndash; May 2024
+          </li>
+        </ul>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience">
+        <h2>Experience</h2>
+        <article class="job">
+          <h3>Software Engineer Intern &mdash; R&amp;D</h3>
+          <p class="company">Applied Medical &middot; Rancho Santa Margarita, CA &middot; <time datetime="2022-05/2024-08">May 2022 &ndash; Aug 2024</time></p>
+
+          <h4>Voyant Debug Utility</h4>
+          <ul>
+            <li>Reduced production-level software defects by 30% by refactoring and enhancing a C++/Qt full-stack application that manages USB bulk transactions via libusb for the Voyant electrosurgical generator product line.</li>
+            <li>Improved development and laboratory workflow efficiency by introducing customer-requested features and usability enhancements used across assembly, validation, and testing environments.</li>
+            <li>Increased long-term maintainability by authoring and maintaining comprehensive SRS and SDS documentation for regulated medical device development.</li>
+          </ul>
+
+          <h4>Voyant MedForm Extractor</h4>
+          <ul>
+            <li>Increased laboratory technician productivity by 25% and improved data processing speed by 30% by developing an automated ETL pipeline in Python (NumPy, Pandas, PyPDF2) and C++ to extract and transform generator D-Forms across PDF, CSV, and proprietary formats.</li>
+            <li>Strengthened regulatory compliance and data integrity by designing structured storage workflows for secure network-based archival systems.</li>
+            <li>Reduced manual data handling errors by automating parsing and transformation logic across heterogeneous file formats.</li>
+          </ul>
+
+          <h4>Voyant Script Decompiler</h4>
+          <ul>
+            <li>Reduced validation cycle time by 70% by developing an automated Python-based decompilation tool that translated proprietary compiled medical device scripts into structured, human-readable formats for engineering and QA teams.</li>
+            <li>Eliminated manual reverse-engineering workflows by implementing automated tokenization and parsing logic, significantly improving debugging efficiency and cross-team productivity.</li>
+            <li>Increased software reliability during testing by enabling faster defect isolation and script-level traceability across development and laboratory environments.</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Projects -->
+      <!-- TODO: update each href to the individual repo URL once public -->
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <article class="project">
+          <h3><a href="https://github.com/Seena-02" target="_blank" rel="noopener noreferrer">Legal Document RAG System</a></h3>
+          <p class="project-date"><time datetime="2026-01">Jan 2026</time></p>
+          <p class="project-desc">Designed a retrieval-augmented generation (RAG) system for legal contract analysis using the CUAD dataset. Implemented custom token-based chunking with tiktoken, sentence-transformer embeddings, and ChromaDB for vector storage. Integrated structured evaluation using RAGAS metrics and designed for FastAPI-based deployment.</p>
+          <p class="tech-stack">Python &middot; RAG &middot; ChromaDB &middot; sentence-transformers &middot; FastAPI &middot; tiktoken</p>
+        </article>
+
+        <article class="project">
+          <h3><a href="https://github.com/Seena-02" target="_blank" rel="noopener noreferrer">MLOps Model Serving Pipeline</a></h3>
+          <p class="project-date"><time datetime="2025-12">Dec 2025</time></p>
+          <p class="project-desc">Production-grade ML serving pipeline with FastAPI, Docker, and MLflow for versioned model deployment. Implements Prometheus metrics, Grafana dashboards, and CI/CD automation with GitHub Actions. Containerized inference services deployed on AWS (EC2, S3) for scalable and reproducible model hosting.</p>
+          <p class="tech-stack">Python &middot; FastAPI &middot; Docker &middot; MLflow &middot; Prometheus &middot; Grafana &middot; AWS &middot; GitHub Actions</p>
+        </article>
+
+        <article class="project">
+          <h3><a href="https://github.com/Seena-02" target="_blank" rel="noopener noreferrer">High-Dimensional Embedding for Language-Aligned Perception</a></h3>
+          <p class="project-date"><time datetime="2025-11">Nov 2025</time></p>
+          <p class="project-desc">Investigated visual-to-sequential reasoning by designing a ResNet18-GPT2 architecture with prefix-tuning that encodes procedural information from images into language model representations. Systematic ablation studies revealed prefix token count controls vision-to-language information transfer, with model capacity exhibiting sharp phase transitions at scale.</p>
+          <p class="tech-stack">Python &middot; PyTorch &middot; ResNet18 &middot; GPT-2 &middot; prefix-tuning</p>
+        </article>
+
+        <article class="project">
+          <h3><a href="https://github.com/Seena-02" target="_blank" rel="noopener noreferrer">Noisy Adam Optimizer</a></h3>
+          <p class="project-date"><time datetime="2024-12">Dec 2024</time></p>
+          <p class="project-desc">Developed a stochastic extension of the Adam optimizer that injects distribution-driven noise (Gaussian, Uniform, Laplace, Cauchy) into post-update parameter steps to improve exploration in high-dimensional optimization landscapes. Demonstrated smoother convergence and faster training across benchmark tasks. Built in a PhD-level seminar course.</p>
+          <p class="tech-stack">Python &middot; PyTorch &middot; NumPy</p>
+        </article>
+
+      </section>
+
+      <!-- Skills -->
+      <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <ul>
+              <li>Python</li>
+              <li>C / C++</li>
+              <li>SQL</li>
+              <li>JavaScript</li>
+              <li>R</li>
+              <li>MATLAB</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h3>Machine Learning</h3>
+            <ul>
+              <li>PyTorch</li>
+              <li>scikit-learn</li>
+              <li>NumPy / Pandas</li>
+              <li>OpenCV</li>
+              <li>Streamlit</li>
+              <li>Model serving &amp; monitoring</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h3>Software &amp; Systems</h3>
+            <ul>
+              <li>C++/Qt (full-stack)</li>
+              <li>libusb / USB protocols</li>
+              <li>ETL pipeline development</li>
+              <li>OOP / OOSD</li>
+              <li>SRS / SDS documentation</li>
+              <li>CI/CD</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h3>Tools &amp; Platforms</h3>
+            <ul>
+              <li>Git / GitHub</li>
+              <li>Docker</li>
+              <li>AWS (EC2, S3)</li>
+              <li>MLflow</li>
+              <li>Linux</li>
+              <li>JIRA / Agile</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Open to new opportunities &mdash; feel free to reach out.</p>
+        <ul class="contact-links">
+          <li>
+            <a href="mailto:seenamohajeran@gmail.com">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+              seenamohajeran@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/seenamohajeran" target="_blank" rel="noopener noreferrer">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Seena-02" target="_blank" rel="noopener noreferrer">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              GitHub
+            </a>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Seena Mohajeran</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
