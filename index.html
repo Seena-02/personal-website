@@ -52,8 +52,8 @@
         <div class="hero-inner">
           <div class="hero-text">
             <h1>Seena Mohajeran</h1>
-            <p class="title">Software Engineer &mdash; ML &amp; Embedded Systems</p>
-            <p class="tagline">Building intelligent systems at the intersection of machine learning and embedded software.</p>
+            <p class="title">ML Engineer &mdash; MLOps &amp; AI</p>
+            <p class="tagline">Building automated data pipelines, transformation tools, and production ML serving infrastructure.</p>
             <a href="./resume/seena-mohajeran-resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-btn">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
@@ -79,8 +79,8 @@
       <section id="about">
         <h2>About Me</h2>
         <p>
-          Software engineer with experience in embedded systems R&amp;D and a graduate focus in machine learning and data science.
-          I've worked on regulated medical device software at Applied Medical and am currently pursuing my M.S. at USC.
+          MS graduate in ML &amp; Data Science from USC with hands-on experience building automated data pipelines, binary-to-structured-data
+          transformation tools, and production ML serving infrastructure. Seeking ML Engineer, MLOps, and AI Engineer roles.
         </p>
         <h3>Education</h3>
         <ul class="education-list">
@@ -93,6 +93,8 @@
             California State University, Fullerton (CSUF) &middot; GPA: 3.51 &middot; Aug 2020 &ndash; May 2024
           </li>
         </ul>
+        <h3>Interests</h3>
+        <p>Taekwondo (2nd-degree Black Belt, former tournament coach), MMA, Culinary Arts, Fitness, Strength training</p>
       </section>
 
       <!-- Experience -->
@@ -100,27 +102,23 @@
         <h2>Experience</h2>
         <article class="job">
           <h3>Software Engineer Intern &mdash; R&amp;D</h3>
-          <p class="company">Applied Medical &middot; Rancho Santa Margarita, CA &middot; <time datetime="2022-05/2024-08">May 2022 &ndash; Aug 2024</time></p>
+          <p class="company">Applied Medical &middot; Rancho Santa Margarita, CA &middot; <time datetime="2022/2024">Summer 2022, 2023, 2024</time></p>
 
-          <h4>Voyant Debug Utility</h4>
+          <h4>Automated Data Pipeline (ETL)</h4>
           <ul>
-            <li>Reduced production-level software defects by 30% by refactoring and enhancing a C++/Qt full-stack application that manages USB bulk transactions via libusb for the Voyant electrosurgical generator product line.</li>
-            <li>Improved development and laboratory workflow efficiency by introducing customer-requested features and usability enhancements used across assembly, validation, and testing environments.</li>
-            <li>Increased long-term maintainability by authoring and maintaining comprehensive SRS and SDS documentation for regulated medical device development.</li>
+            <li>Increased data processing speed by 30% and technician productivity by 25% by building an automated ETL pipeline in Python (NumPy, Pandas, PyPDF2) and C++ that enumerated mass storage devices, parsed heterogeneous file formats (PDF, CSV, proprietary binary), transformed records, and loaded structured outputs to network storage on an hourly automated schedule.</li>
+            <li>Strengthened data integrity and regulatory traceability by designing structured storage workflows with consistent schema enforcement across the ingestion pipeline.</li>
           </ul>
 
-          <h4>Voyant MedForm Extractor</h4>
+          <h4>Binary-to-Structured-Data Transformation Pipeline</h4>
           <ul>
-            <li>Increased laboratory technician productivity by 25% and improved data processing speed by 30% by developing an automated ETL pipeline in Python (NumPy, Pandas, PyPDF2) and C++ to extract and transform generator D-Forms across PDF, CSV, and proprietary formats.</li>
-            <li>Strengthened regulatory compliance and data integrity by designing structured storage workflows for secure network-based archival systems.</li>
-            <li>Reduced manual data handling errors by automating parsing and transformation logic across heterogeneous file formats.</li>
+            <li>Reduced validation cycle time by 70% by developing a Python-based pipeline that reverse-decompiled proprietary encrypted binary scripts into structured CSV using macro mappings from a C header file, applying custom tokenization and parsing logic for automated binary-to-structured-data transformation.</li>
+            <li>Eliminated manual reverse-engineering workflows by automating the full decompilation process, enabling faster defect isolation and script-level traceability across engineering teams.</li>
           </ul>
 
-          <h4>Voyant Script Decompiler</h4>
+          <h4>USB Debug Utility</h4>
           <ul>
-            <li>Reduced validation cycle time by 70% by developing an automated Python-based decompilation tool that translated proprietary compiled medical device scripts into structured, human-readable formats for engineering and QA teams.</li>
-            <li>Eliminated manual reverse-engineering workflows by implementing automated tokenization and parsing logic, significantly improving debugging efficiency and cross-team productivity.</li>
-            <li>Increased software reliability during testing by enabling faster defect isolation and script-level traceability across development and laboratory environments.</li>
+            <li>Reduced production-level software defects by 30% by refactoring a C++/Qt application managing USB bulk transactions via libusb, supporting cross-team assembly, validation, and testing workflows.</li>
           </ul>
         </article>
       </section>
@@ -133,28 +131,28 @@
         <article class="project">
           <h3><a href="https://github.com/Seena-02" target="_blank" rel="noopener noreferrer">Legal Document RAG System</a></h3>
           <p class="project-date"><time datetime="2026-01">Jan 2026</time></p>
-          <p class="project-desc">Designed a retrieval-augmented generation (RAG) system for legal contract analysis using the CUAD dataset. Implemented custom token-based chunking with tiktoken, sentence-transformer embeddings, and ChromaDB for vector storage. Integrated structured evaluation using RAGAS metrics and designed for FastAPI-based deployment.</p>
+          <p class="project-desc">Designed a retrieval-augmented generation (RAG) system for legal contract analysis using the CUAD dataset; implemented custom token-based chunking with tiktoken, sentence-transformer embeddings, and ChromaDB for vector storage. Integrated structured evaluation using RAGAS metrics and designed for FastAPI-based deployment.</p>
           <p class="tech-stack">Python &middot; RAG &middot; ChromaDB &middot; sentence-transformers &middot; FastAPI &middot; tiktoken</p>
         </article>
 
         <article class="project">
           <h3><a href="https://github.com/Seena-02" target="_blank" rel="noopener noreferrer">MLOps Model Serving Pipeline</a></h3>
           <p class="project-date"><time datetime="2025-12">Dec 2025</time></p>
-          <p class="project-desc">Production-grade ML serving pipeline with FastAPI, Docker, and MLflow for versioned model deployment. Implements Prometheus metrics, Grafana dashboards, and CI/CD automation with GitHub Actions. Containerized inference services deployed on AWS (EC2, S3) for scalable and reproducible model hosting.</p>
+          <p class="project-desc">Built a production-grade ML serving pipeline with FastAPI, Docker, and MLflow for versioned model deployment; implementing Prometheus metrics, Grafana dashboards, and CI/CD automation with GitHub Actions, and deploying containerized inference services on AWS (EC2, S3) for scalable and reproducible model hosting.</p>
           <p class="tech-stack">Python &middot; FastAPI &middot; Docker &middot; MLflow &middot; Prometheus &middot; Grafana &middot; AWS &middot; GitHub Actions</p>
         </article>
 
         <article class="project">
           <h3><a href="https://github.com/Seena-02" target="_blank" rel="noopener noreferrer">High-Dimensional Embedding for Language-Aligned Perception</a></h3>
           <p class="project-date"><time datetime="2025-11">Nov 2025</time></p>
-          <p class="project-desc">Investigated visual-to-sequential reasoning by designing a ResNet18-GPT2 architecture with prefix-tuning that encodes procedural information from images into language model representations. Systematic ablation studies revealed prefix token count controls vision-to-language information transfer, with model capacity exhibiting sharp phase transitions at scale.</p>
+          <p class="project-desc">Investigated visual-to-sequential reasoning by designing a ResNet18-GPT2 architecture with prefix-tuning that encodes procedural information from images into language model representations. Demonstrated that visual features can be successfully decoded into sequential actions through learnable soft prompts, with systematic ablation studies revealing prefix token count controls vision-to-language information, and model capacity exhibits sharp phase transitions when scaling problem complexity.</p>
           <p class="tech-stack">Python &middot; PyTorch &middot; ResNet18 &middot; GPT-2 &middot; prefix-tuning</p>
         </article>
 
         <article class="project">
           <h3><a href="https://github.com/Seena-02" target="_blank" rel="noopener noreferrer">Noisy Adam Optimizer</a></h3>
           <p class="project-date"><time datetime="2024-12">Dec 2024</time></p>
-          <p class="project-desc">Developed a stochastic extension of the Adam optimizer that injects distribution-driven noise (Gaussian, Uniform, Laplace, Cauchy) into post-update parameter steps to improve exploration in high-dimensional optimization landscapes. Demonstrated smoother convergence and faster training across benchmark tasks. Built in a PhD-level seminar course.</p>
+          <p class="project-desc">Developed a stochastic extension of the Adam optimizer that injects distribution-driven noise (Gaussian, Uniform, Laplace, Cauchy) into post-update parameter steps to improve exploration in high-dimensional optimization landscapes; demonstrated smoother convergence and faster training across benchmark tasks. Developed in collaboration with another student as part of a PhD-level seminar course.</p>
           <p class="tech-stack">Python &middot; PyTorch &middot; NumPy</p>
         </article>
 
@@ -171,45 +169,62 @@
               <li>Python</li>
               <li>C / C++</li>
               <li>SQL</li>
-              <li>JavaScript</li>
               <li>R</li>
               <li>MATLAB</li>
+              <li>JavaScript</li>
+              <li>HTML / CSS</li>
             </ul>
           </div>
 
           <div class="skill-category">
-            <h3>Machine Learning</h3>
+            <h3>Frameworks</h3>
             <ul>
               <li>PyTorch</li>
-              <li>scikit-learn</li>
-              <li>NumPy / Pandas</li>
-              <li>OpenCV</li>
+              <li>Scikit-learn</li>
+              <li>FastAPI</li>
               <li>Streamlit</li>
-              <li>Model serving &amp; monitoring</li>
+              <li>Qt</li>
             </ul>
           </div>
 
           <div class="skill-category">
-            <h3>Software &amp; Systems</h3>
+            <h3>ML / Data</h3>
             <ul>
-              <li>C++/Qt (full-stack)</li>
-              <li>libusb / USB protocols</li>
-              <li>ETL pipeline development</li>
-              <li>OOP / OOSD</li>
-              <li>SRS / SDS documentation</li>
-              <li>CI/CD</li>
-            </ul>
-          </div>
-
-          <div class="skill-category">
-            <h3>Tools &amp; Platforms</h3>
-            <ul>
-              <li>Git / GitHub</li>
-              <li>Docker</li>
-              <li>AWS (EC2, S3)</li>
+              <li>NumPy</li>
+              <li>Pandas</li>
+              <li>OpenCV</li>
               <li>MLflow</li>
+              <li>Sentence Transformers</li>
+              <li>A/B Testing</li>
+              <li>Time Series Modeling</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h3>Cloud / Infra</h3>
+            <ul>
+              <li>AWS (EC2, S3)</li>
+              <li>Docker</li>
+              <li>Prometheus</li>
+              <li>Grafana</li>
+              <li>CI/CD (GitHub Actions)</li>
               <li>Linux</li>
-              <li>JIRA / Agile</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h3>Tools</h3>
+            <ul>
+              <li>Git</li>
+              <li>MySQL</li>
+              <li>Jupyter</li>
+              <li>Google Colab</li>
+              <li>Bazel</li>
+              <li>CMake</li>
+              <li>Conan</li>
+              <li>JIRA</li>
+              <li>Confluence</li>
+              <li>LaTeX</li>
             </ul>
           </div>
         </div>
@@ -221,12 +236,12 @@
         <p>Open to new opportunities &mdash; feel free to reach out.</p>
         <ul class="contact-links">
           <li>
-            <a href="mailto:seenamohajeran@gmail.com">
+            <a href="mailto:smohajer@usc.edu">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="2" y="4" width="20" height="16" rx="2"/>
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
               </svg>
-              seenamohajeran@gmail.com
+              smohajer@usc.edu
             </a>
           </li>
           <li>
